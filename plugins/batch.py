@@ -127,7 +127,7 @@ async def cancel(c, m):
 
                     elif message.media or message.document:
                         text = message.caption
-                        link = await replace_mdisk_link(text)
+                        link = await replace_mdiskshortner_link(text)
                         if link == text:
                             print("The given link is either excluded domain link or a droplink link")
                         else:
